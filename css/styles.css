@@ -233,6 +233,8 @@ footer {
     }
 }
 
+/**/
+
 @media (min-width: 992px) {
     .padre-cards {
         grid-template-columns: repeat(3, 1fr);

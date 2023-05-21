@@ -18,6 +18,25 @@ header nav {
     z-index: 4; /*NO SE PORQUE NO FUNCIONA EL STICKY*/
 }
 
+.navbar {
+    padding: 0px;
+}
+
+.navbar li a:hover {
+    color: red;
+}
+
+.navbar ul {
+    gap: 15px;
+}
+
+.navbar li a:active {
+    color: red;
+    background-color: rgb(113, 160, 113);
+}
+
+
+
 .navbar div {
     background-color: rgba(241, 156, 121,0.8);
     padding-bottom: 15px;
@@ -192,25 +211,80 @@ footer {
 
 /*catalogo*/
 
-.fila1 {
+.filtro-productos {
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.padre-cards {
     display: flex;
-    justify-content: space-between;
-    margin-left: 120px;
-    margin-right: 120px;
-} /*ME GUSTARIA SABER SI HAY OTRA FORMA DE HACER ESTO O ES LA FORMA MAS EFICIENTE LA QUE USE*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
 
+@media (min-width: 768px) {
+    .padre-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 30px;
+    }
+}
 
+@media (min-width: 992px) {
+    .padre-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
 .card1 {
-    background-color: rgba(57, 57, 58,0.7);
-    border: solid 4px black;
-    width: 400px;
-    height: 500px;
-
-    margin-top: 80px;
-    margin-bottom: 80px;
-    position: relative;
+    width: 18rem;
+    -webkit-box-shadow: 0px 0px 17px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 17px 0px rgba(255,255,255,1);
+    box-shadow: 0px 0px 17px 0px rgba(255,255,255,1);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    background-color: rgb(177, 52, 52);
 }
+
+
+.container-labels {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.container-labels label {
+    cursor: pointer;
+    padding: 8px 15px;
+    background-color: aquamarine;
+}
+
+#procesadores, #graficas, #todos {
+    display: none;
+}
+
+.procesadores, .graficas {
+    display: none;
+}
+
+#procesadores:checked ~ .padre-cards .procesadores,
+#graficas:checked ~ .padre-cards .graficas {
+    display: flex;
+}
+
+#todos:checked ~ .padre-cards .procesadores,
+#todos:checked ~ .padre-cards .graficas {
+    display: flex;
+}
+
+
 
 
 .card1 img {
@@ -227,6 +301,12 @@ footer {
     font-size: large;
 }
 
+.card1 button {
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    font-weight: 700;
+}
 
 /*ARMA TU PC*/
 

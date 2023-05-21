@@ -287,8 +287,6 @@ footer {
 }
 
 
-
-
 .card1 img {
     width: 250px;
     display: block;
@@ -344,10 +342,14 @@ margin: 0 100px;
 /*CONTACTO*/
 
 .formulario {
-    margin: 300px;
-} /*no se bien como separar los items aca, se me ocurre usar position relative y absolute pero le tendria que dar muchas partes al css y no se si hay una forma mas facil, o con flex tal vez*/
+    margin: 100px;
+} 
 
-
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
 
 /*FLOTANTE DE WPP*/

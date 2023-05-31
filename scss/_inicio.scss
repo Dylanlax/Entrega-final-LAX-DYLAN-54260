@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+header nav {
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    z-index: 4; /*NO SE PORQUE NO FUNCIONA EL STICKY*/
+}
+
+.navbar {
+    padding: 0px;
+
+    li a:hover {
+        color: red;
+    }
+    
+    ul {
+        gap: 15px;
+    }
+
+    li a:active {
+        color: red;
+        background-color: rgb(113, 160, 113);
+    }
+
+    div {
+        background-color: rgba(241, 156, 121,0.8);
+        padding-bottom: 15px;
+    }
+
+    img {
+        width: 100px;
+    }
+}
+
+/*3 items del medio*/
+
+.tres-items {
+    margin: 0 auto;
+    margin-top: 50px;
+
+    div {
+        text-align: center;
+    }
+
+    div p {
+        margin-top: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    img {
+        background-color: gray;
+    }
+}
+
+/*INTEL O AMD*/
+
+
+.intel-amd {
+    padding: 20px 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+
+    img {
+        width: 400px;
+        height: 400px;
+    }
+
+    a {
+        text-align: center;
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .intel-amd {
+        flex-direction: row;
+        gap: 200px;
+    }
+}
+
+.text-amdintel {
+    font-size: 2rem;
+}
+
+
+
+/*SUSCRIBITE A NEWSLETTER*/
+
+.newsletter {
+    background-color: rgba(128, 128, 128, 0.3);
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 30px;
+}
+
+.text1 {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+.text2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.emailynombre {
+    background-color: rgba(128, 128, 128, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 35%;
+    padding-right: 35%;
+    padding-top: 25px;
+    padding-bottom: 80px;
+
+    input {
+        height: 30px;
+        width: 150px;
+    }
+}
+
+@media (min-width: 768px) {
+    .emailynombre {
+        flex-direction: row;
+    }
+
+
+    .text1 {
+        font-weight: bold;
+        font-size: 70px;
+        text-align: center;
+    }
+    
+    .text2 {
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+
+/*FOOTER*/
+
+footer {
+    background-color: rgba(128, 128, 128, 0.76);
+    padding-top: 10px;
+    padding-bottom: 20px;
+} 
+
+.menu-del-footer {
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 3rem;
+        list-style-type: none;
+    }
+
+    li {
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        color: black;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+@media (min-width: 768px) {
+    .menu-del-footer ul {
+        flex-direction: row;
+        gap: 5rem;
+    }
+}
+
+
+/*fin de pagina*/
+
+.piedepag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 30px;
+    padding-bottom: 40px;
+
+    p {
+        font-style: italic;
+    }
+}
+
+/*FLOTANTE DE WPP*/
+
+.Flotante-Whatsapp {
+    position: fixed;
+    bottom: 0px;
+    right: 40px;
+}
+
+.Flotante-Whatsapp2 {
+    width: 80px;
+}

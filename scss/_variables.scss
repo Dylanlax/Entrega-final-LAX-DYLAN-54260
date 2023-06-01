@@ -1,0 +1,21 @@
+/*PALETA DE COLORES*/
+$color-principal: rgba(241, 156, 121,0.8);
+$color-fondo: #ffff;
+$modo-oscuro: #b3b3b3;
+
+
+@mixin flex-column-centrado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin medidas($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
+/*.img2 {
+    @include medidas(200px, 300px)
+}*/

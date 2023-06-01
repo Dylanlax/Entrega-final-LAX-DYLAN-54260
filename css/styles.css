@@ -195,4 +195,91 @@ footer {
   width: 80px;
 }
 
+.filtro-productos {
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+.padre-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+@media (min-width: 768px) {
+  .padre-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 30px;
+  }
+}
+@media (min-width: 992px) {
+  .padre-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.card1 {
+  width: 18rem;
+  -webkit-box-shadow: 0px 0px 17px 0px rgb(255, 255, 255);
+  -moz-box-shadow: 0px 0px 17px 0px rgb(255, 255, 255);
+  box-shadow: 0px 0px 17px 0px rgb(255, 255, 255);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  background-color: rgb(177, 52, 52);
+}
+.card1 img {
+  width: 250px;
+  display: block;
+  display: block;
+  margin: 20px auto;
+}
+.card1 p {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: large;
+}
+.card1 button {
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.container-labels {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+.container-labels label {
+  cursor: pointer;
+  padding: 8px 15px;
+  background-color: aquamarine;
+}
+
+#procesadores, #graficas, #todos {
+  display: none;
+}
+
+.procesadores, .graficas {
+  display: none;
+}
+
+#procesadores:checked ~ .padre-cards .procesadores,
+#graficas:checked ~ .padre-cards .graficas {
+  display: flex;
+}
+
+#todos:checked ~ .padre-cards .procesadores,
+#todos:checked ~ .padre-cards .graficas {
+  display: flex;
+}
+
 /*# sourceMappingURL=styles.css.map */

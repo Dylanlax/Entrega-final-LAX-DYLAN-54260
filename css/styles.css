@@ -1,3 +1,7 @@
+/*PALETA DE COLORES*/
+/*.img2 {
+    @include medidas(200px, 300px)
+}*/
 * {
   margin: 0;
   padding: 0;
@@ -110,17 +114,17 @@ header nav {
   background-color: rgba(128, 128, 128, 0.3);
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  gap: 20px;
   padding-left: 35%;
   padding-right: 35%;
   padding-top: 25px;
   padding-bottom: 80px;
 }
 .emailynombre input {
-  height: 30px;
   width: 150px;
+  height: 30px;
 }
 
 @media (min-width: 768px) {
@@ -147,8 +151,8 @@ footer {
 .menu-del-footer ul {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 3rem;
   list-style-type: none;
@@ -174,8 +178,8 @@ footer {
 .piedepag {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
   padding-top: 30px;
   padding-bottom: 40px;
@@ -280,6 +284,36 @@ footer {
 #todos:checked ~ .padre-cards .procesadores,
 #todos:checked ~ .padre-cards .graficas {
   display: flex;
+}
+
+.container-sidebar {
+  display: flex;
+  margin-left: 100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.container-sidebar img {
+  width: 350px;
+  margin: 0 100px;
+}
+
+.sidebar {
+  width: 25%;
+}
+
+.contenedor-mapa {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px;
+}
+
+.formulario {
+  margin: 100px;
+}
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */

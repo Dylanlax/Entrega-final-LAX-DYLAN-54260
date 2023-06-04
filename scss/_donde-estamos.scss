@@ -1,5 +1,12 @@
 .contenedor-mapa {
-    display: flex;
-    justify-content: space-between;
-    margin: 100px;
+    @include flex-column-centrado;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    gap: 30px;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
 }

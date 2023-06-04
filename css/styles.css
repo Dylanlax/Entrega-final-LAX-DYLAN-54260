@@ -296,14 +296,26 @@ footer {
 }
 
 .container-sidebar {
+  margin-top: 150px;
+  margin-bottom: 150px;
   display: flex;
-  margin-left: 100px;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+@media (min-width: 768px) {
+  .container-sidebar {
+    flex-direction: row;
+  }
 }
 .container-sidebar img {
-  width: 350px;
-  margin: 0 100px;
+  width: 150px;
+}
+@media (min-width: 768px) {
+  .container-sidebar img {
+    width: 250px;
+  }
 }
 
 .sidebar {
@@ -312,8 +324,19 @@ footer {
 
 .contenedor-mapa {
   display: flex;
-  justify-content: space-between;
-  margin: 100px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  gap: 30px;
+}
+@media (min-width: 768px) {
+  .contenedor-mapa {
+    flex-direction: row;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
 }
 
 .formulario {

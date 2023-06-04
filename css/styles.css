@@ -43,6 +43,11 @@ header nav {
   width: 100px;
 }
 
+.navbar-nav {
+  gap: 10px;
+  padding-top: 15px;
+}
+
 /*3 items del medio*/
 .tres-items {
   margin: 0 auto;
@@ -186,6 +191,10 @@ footer {
 }
 .piedepag p {
   font-style: italic;
+}
+.piedepag h1 {
+  font-style: italic;
+  font-size: 20px;
 }
 
 /*FLOTANTE DE WPP*/

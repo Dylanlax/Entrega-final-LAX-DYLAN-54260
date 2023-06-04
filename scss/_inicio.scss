@@ -44,6 +44,10 @@ header nav {
     }
 }
 
+.navbar-nav {
+    gap: 10px;
+    padding-top: 15px;
+}
 /*3 items del medio*/
 
 .tres-items {
@@ -82,6 +86,7 @@ header nav {
         text-decoration: none;
     }
 }
+
 
 @media (min-width: 768px) {
     .intel-amd {
@@ -201,7 +206,13 @@ footer {
     p {
         font-style: italic;
     }
+
+    h1 {
+        font-style: italic;
+        font-size: 20px;
+    }
 }
+
 
 /*FLOTANTE DE WPP*/
 

@@ -208,6 +208,14 @@ footer {
   width: 80px;
 }
 
+.error404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
 .filtro-productos {
   margin-bottom: 50px;
   margin-top: 30px;

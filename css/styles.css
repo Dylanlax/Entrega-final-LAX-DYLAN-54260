@@ -209,11 +209,11 @@ footer {
 }
 
 .error404 {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
 }
 
 .filtro-productos {
@@ -260,6 +260,7 @@ footer {
 }
 .card1 img {
   width: 250px;
+  height: 250px;
   display: block;
   display: block;
   margin: 20px auto;
@@ -275,6 +276,10 @@ footer {
   padding: 8px;
   cursor: pointer;
   font-weight: 700;
+  border-radius: 45px;
+}
+.card1 button:active {
+  background-color: rgba(241, 156, 121, 0.8);
 }
 
 .container-labels {
@@ -287,6 +292,9 @@ footer {
   cursor: pointer;
   padding: 8px 15px;
   background-color: aquamarine;
+}
+.container-labels label:active {
+  background-color: rgba(241, 156, 121, 0.8);
 }
 
 #procesadores, #graficas, #todos {

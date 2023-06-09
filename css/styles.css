@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Noto Sans", sans-serif;
 }
@@ -46,6 +50,25 @@ header nav {
 .navbar-nav {
   gap: 10px;
   padding-top: 15px;
+}
+
+.carousel {
+  margin-top: 50px;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  height: 160px;
+}
+@media (min-width: 768px) {
+  .carousel-item img {
+    height: 300px;
+  }
+}
+@media (min-width: 1024px) {
+  .carousel-item img {
+    height: 450px;
+  }
 }
 
 /*3 items del medio*/
@@ -161,6 +184,7 @@ footer {
   flex-wrap: wrap;
   gap: 3rem;
   list-style-type: none;
+  padding: 0px;
 }
 .menu-del-footer li {
   text-decoration: none;
@@ -338,6 +362,10 @@ footer {
   }
 }
 
+.accordion {
+  margin-top: 50px;
+}
+
 .sidebar {
   width: 25%;
 }
@@ -356,6 +384,27 @@ footer {
     flex-direction: row;
     margin-right: 50px;
     margin-left: 50px;
+  }
+}
+@media (max-width: 480px) {
+  .contenedor-mapa div iframe {
+    width: 400px;
+    height: auto;
+  }
+}
+@media (min-width: 480px) {
+  .contenedor-mapa div iframe {
+    width: 450px;
+  }
+}
+@media (min-width: 768px) {
+  .contenedor-mapa div iframe {
+    height: 450px;
+  }
+}
+@media (min-width: 1280px) {
+  .contenedor-mapa div iframe {
+    width: 600px;
   }
 }
 

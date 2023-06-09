@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Noto Sans', sans-serif;
 }
@@ -48,6 +52,29 @@ header nav {
     gap: 10px;
     padding-top: 15px;
 }
+
+.carousel {
+    margin-top: 50px;
+}
+
+.carousel-item {
+    img {
+        max-width: 100%;
+        height: 160px;
+
+        @media (min-width: 768px) {
+            height: 300px;
+        }
+        @media (min-width: 1024px) {
+            height: 450px;
+        }
+    }
+}
+
+
+
+
+
 /*3 items del medio*/
 
 .tres-items {
@@ -172,6 +199,7 @@ footer {
         flex-wrap: wrap;
         gap: 3rem;
         list-style-type: none;
+        padding: 0px;
     }
 
     li {
@@ -185,6 +213,7 @@ footer {
         text-decoration: none;
         color: black;
     }
+    
 }
 
 @media (min-width: 768px) {
